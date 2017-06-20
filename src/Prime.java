@@ -1,18 +1,18 @@
 public class Prime {
 	public static void primeGenerator(int n) {
-		int c = 0;
+		int count = 0;
 	
 		for (int i = 2; i <= n ; i++) {
 			for (int j = 2; j <= i - 1; j++) {
 				if (i % j == 0) {
-					c = c + 1;
+					count = count + 1;
 				}
 			}
-			if (c== 0) {
+			if (count== 0) {
 				System.out.print(" "+i);
 				System.out.println("hi");
 			} else {
-				c = 0;
+				count = 0;
 			}
 
 		}
